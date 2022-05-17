@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Times New Roman, serif;
+}
+
+header{
+    background-color: white;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-size:  20px;
+    font-weight: 700px;
+}
+
+.nav-bar{
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    box-shadow: 0 2px 5px #27378f;
+    margin-bottom: 50px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item{
+    transition: 0.4s ease;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.nav-item.active, .nav-item:hover{
+    color:  #f0008e;
+    background: #27378f;
+    padding: 12px 12px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.bar{
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #f0008e;
+    border-radius: 6px solid #f0008e;  
+}
+
+@media screen and (max-width: 768px){
+    .hamburger{
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 1px 6px #27378f;
+        padding: 0;
+    }
+
+    .nav-item{
+        margin: 10px 0;
+        display: block;
+        line-height: 35px;
+    }
+
+    .nav-menu.active{
+        left:0;
+    }
+
+    .hamburger.open .bar{
+        transform: translateX(-50px);
+        background: transparent;
+    }
+}
+
+.form-control{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+}
+
+.psd{
+    color: #f0008e;
+    
+}
+
+i{
+    margin-left: -45px;
+    cursor: pointer;
+}
+/* @import "~bootstrap/scss/bootstrap"; */
+
+/* @import "../node_modules/bootstrap/scss/bootstrap";
+    .custom-element {
+    color: $gray-100;
+    background-color: $dark;
+    } */
+
+
+/*colours
+#f0008e pink
+#27378f blue*/
+
+
