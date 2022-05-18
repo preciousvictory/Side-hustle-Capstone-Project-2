@@ -29,7 +29,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 10px 24px;
-    box-shadow: 0 2px 5px #27378f;
+    box-shadow: 0 1px 3px #3f4046;
     margin-bottom: 50px;
 }
 
@@ -61,12 +61,92 @@ a{
 .bar{
     display: block;
     width: 20px;
-    height: 3px;
-    margin: 6px auto;
+    height: 5px;
+    margin: 3px;
+    padding: 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #f0008e;
-    border-radius: 6px solid #f0008e;  
+  
+}
+
+#Sign-Up h1{
+    font-family: "Sofia", sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #ababab;
+    font-weight: 400;
+    font: bold;
+    color: #f0008e;
+}
+
+#form{
+    background: white;
+    box-shadow: 0 1px 3px #494a4e;
+    padding: auto;
+    position: relative;
+}
+
+.form-control{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+    font-size: 18px;
+    color: #f0008e;
+}
+
+.form-check-label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+    font-size: 15px;
+}
+
+.gen{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1ch;
+    font-size: 16px;
+    padding: 4px;
+}
+
+span #eye, #eye1{
+    position: absolute;
+    right: 15px;
+    transform: translate(0, -50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.fa{
+    font-size: 20px;
+    color: #f0008e;
+}
+
+.btn{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.05ch;
+    font-weight: bolder;
+    font-size: 20px;
+    border: transparent;
+}
+
+.btn:hover{
+    background: #f0008e;
+}
+
+.error{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: red;
+    position: relative;
+    top: 10px;
+    padding: 0 20px;
+    display: none;
+}
+
+
+#form .btn input{
+    background: #f0008e;
+    border: 0;
+    width: 10ps;
 }
 
 @media screen and (max-width: 768px){
@@ -76,6 +156,7 @@ a{
         height: 40px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+        border-radius: 3px;
     }
 
     .hamburger.active .bar:nth-child(2){
@@ -88,6 +169,11 @@ a{
 
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hamburger.open .bar{
+        transform: translateX(-50px);
+        background: transparent;
     }
 
     .nav-menu{
@@ -114,37 +200,21 @@ a{
         left:0;
     }
 
-    .hamburger.open .bar{
-        transform: translateX(-50px);
-        background: transparent;
-    }
-}
-
-.form-control{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1ch;
-}
-
-.psd{
-    color: #f0008e;
+    #form{
+        background: white;
+        box-shadow: 0 1px 3px #494a4e;
+        padding: auto;
+        position: relative;
+    }                                                                
     
 }
-
-i{
-    margin-left: -45px;
-    cursor: pointer;
-}
-/* @import "~bootstrap/scss/bootstrap"; */
-
-/* @import "../node_modules/bootstrap/scss/bootstrap";
-    .custom-element {
-    color: $gray-100;
-    background-color: $dark;
-    } */
 
 
 /*colours
 #f0008e pink
 #27378f blue*/
+
+
+
 
 
