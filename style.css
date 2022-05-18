@@ -142,13 +142,6 @@ span #eye, #eye1{
     display: none;
 }
 
-
-#form .btn input{
-    background: #f0008e;
-    border: 0;
-    width: 10ps;
-}
-
 @media screen and (max-width: 768px){
     .hamburger{
         display: block;
@@ -209,12 +202,8 @@ span #eye, #eye1{
     
 }
 
-
 /*colours
 #f0008e pink
 #27378f blue*/
-
-
-
 
 
