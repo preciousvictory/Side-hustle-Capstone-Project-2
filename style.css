@@ -84,7 +84,6 @@ a{
     box-shadow: 0 1px 3px #494a4e;
     padding: auto;
     position: relative;
-    z-index: -1;
 }
 
 .form-control{
@@ -201,6 +200,14 @@ span #eye, #eye1{
 
     .nav-menu.active{
         left:0;
+    }
+    
+    #form{
+        background: #f0008e;
+        box-shadow: 0 1px 3px #494a4e;
+        padding: auto;
+        position: relative;
+        z-index: -1;
     }
 
 }
