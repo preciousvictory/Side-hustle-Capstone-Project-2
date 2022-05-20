@@ -80,10 +80,11 @@ a{
 }
 
 #form{
-    background: white;
+    background: #f0008e;
     box-shadow: 0 1px 3px #494a4e;
     padding: auto;
     position: relative;
+    z-index: -1;
 }
 
 .form-control{
@@ -97,21 +98,21 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 0.1ch;
     font-size: 15px;
+    color: white;
+    font-weight: bold;
 }
 
 .gen{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1ch;
+    letter-spacing: 0.05ch;
     font-size: 16px;
-    padding: 4px;
+    padding: 3px;
+    color: white;
+    font-weight: 700;
 }
 
 .form-check-label:hover{
-    color: #f0008e;
-}
-
-.form-check-input{
-    color: #f0008e;
+    color: white;
 }
 
 span #eye, #eye1{
@@ -136,7 +137,8 @@ span #eye, #eye1{
 }
 
 .btn:hover{
-    background: #f0008e;
+    background: white;
+    color: #f0008e;
 }
 
 .error{
@@ -201,14 +203,9 @@ span #eye, #eye1{
         left:0;
     }
 
-    #form{
-        background: white;
-        box-shadow: 0 1px 3px #494a4e;
-        padding: auto;
-        position: relative;
-    }                                                                
-    
 }
+
+
 
 /*colours
 #f0008e pink
