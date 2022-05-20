@@ -1,217 +1,58 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*, .fluid{
+    background-color: lightblue;
 }
 
-body{
-    font-family: Times New Roman, serif;
-}
-
-header{
+.navigator{
     background-color: white;
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    color: black;
-    text-decoration: none;
-    font-size:  20px;
-    font-weight: 700px;
-}
-
-.nav-bar{
-    min-height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 24px;
-    box-shadow: 0 1px 3px #3f4046;
-    margin-bottom: 50px;
-}
-
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.nav-item{
-    transition: 0.4s ease;
-    border-radius: 4px;
-    padding: 1px;
-}
-
-.nav-item.active, .nav-item:hover{
-    color:  #f0008e;
-    background: #27378f;
-    padding: 12px 12px;
-}
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.bar{
-    display: block;
-    width: 20px;
-    height: 5px;
-    margin: 3px;
-    padding: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: #f0008e;
-  
-}
-
-#Sign-Up h1{
-    font-family: "Sofia", sans-serif;
-    font-size: 50px;
-    text-shadow: 2px 2px 2px #ababab;
-    font-weight: 400;
-    font: bold;
-    color: #f0008e;
-}
-
-#form{
-    background: white;
-    box-shadow: 0 1px 3px #494a4e;
-    padding: auto;
-    position: relative;
-}
-
-.form-control{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1ch;
-    font-size: 18px;
-    color: #f0008e;
-}
-
-.form-check-label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1ch;
-    font-size: 15px;
-}
-
-.gen{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.1ch;
-    font-size: 16px;
-    padding: 4px;
-}
-
-.form-check-label:hover{
-    color: #f0008e;
-}
-
-.form-check-input{
-    color: #f0008e;
-}
-
-span #eye, #eye1{
-    position: absolute;
-    right: 15px;
-    transform: translate(0, -50%);
-    top: 50%;
-    cursor: pointer;
-}
-
-.fa{
-    font-size: 20px;
-    color: #f0008e;
-}
-
-.btn{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.05ch;
-    font-weight: bolder;
-    font-size: 20px;
-    border: transparent;
-}
-
-.btn:hover{
-    background: #f0008e;
-}
-
-.error{
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    color: red;
-    position: relative;
-    top: 10px;
-    padding: 0 20px;
-    display: none;
-}
-
-@media screen and (max-width: 768px){
-    .hamburger{
-        display: block;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        border-radius: 3px;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .hamburger.open .bar{
-        transform: translateX(-50px);
-        background: transparent;
-    }
-
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 1px 6px #27378f;
-        padding: 0;
-    }
-
-    .nav-item{
-        margin: 10px 0;
-        display: block;
-        line-height: 35px;
-    }
-
-    .nav-menu.active{
-        left:0;
-    }
-
-    #form{
-        background: white;
-        box-shadow: 0 1px 3px #494a4e;
-        padding: auto;
-        position: relative;
-    }                                                                
+    box-shadow: 0 1px 3px rgb(63, 28, 0);
     
 }
 
-/*colours
-#f0008e pink
-#27378f blue*/
+.navbar, .text, .nav, .nav-, #logo, .logo-brand, .menu,.nav-item, .nav-link, .search{
+    background-color: white;
+}
 
+.nav .logo-brand{
+    
+    font-family: Brush Script MT, cursive;
+}
 
+.nav-item{
+    padding-right: 10px;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;  
+}
+
+.nav-link:hover{
+    background-color: rgb(255, 115, 0);
+    transition: 0.4s ease;
+    border-radius: 4px;
+}
+
+.nav-link.active{
+    background-color: rgb(255, 115, 0);
+}
+
+.btn:hover{
+    background-color: black;
+    color: rgb(255, 115, 0);
+}
+
+.btn{
+    background-color: rgb(255, 115, 0);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: 1px;
+}
+
+.ham{
+    background-color: white;
+}
+
+.sp::placeholder{
+    color: rgb(255, 115, 0);
+}
