@@ -1,4 +1,4 @@
-# Side-husstle Capstone Project-2
+# Side-hustle Capstone Project-2
 Second Capstone Project for Side Hustle Internship 
 Group 100 
 Team leader- Blessing Amana 
